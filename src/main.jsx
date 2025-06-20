@@ -5,6 +5,7 @@ import App from './App.jsx'
 import {RouterProvider , createBrowserRouter} from 'react-router-dom'
 import Footer from './pages/Footer/Footer.jsx'
 import Rings from './Rings/Rings.jsx'
+import Header from './Header.jsx'
 
 const router = createBrowserRouter(
   [
@@ -21,7 +22,7 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
+  <Header/>
   <RouterProvider router={router} />
   <Footer/>
 
