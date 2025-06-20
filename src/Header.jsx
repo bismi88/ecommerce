@@ -1,6 +1,7 @@
 import { Search } from "lucide-react";
 import { ShoppingCart } from 'lucide-react';
 import './header.css'
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return(
@@ -8,7 +9,7 @@ export default function Header(){
              
             <nav className="image flex justify-between pt-5 ">
             <ul className="jewellery flex gap-5 pl-10">
-                <li>RINGS</li>
+                <li><a className="" href="/rings">RINGS</a></li>
                 <li>BRACELETS</li>
                 <li>EARINGS</li>
                 <li>NECKLACES</li>
@@ -19,8 +20,8 @@ export default function Header(){
                "> jewellery store</h6>
            </ul>
             <ul className="home flex gap-5 pr-10">
-                <li>HOME</li>
-                <li>ABOUT</li>
+                <li><a className="" href="/">HOME</a> </li>
+                <li><a className="" href="/About">ABOUT</a>  </li>
                 <li>CONTACT</li>
                  <li>
                     <Search />
@@ -28,6 +29,7 @@ export default function Header(){
                  </li>
                  <li><ShoppingCart /></li>
             </ul>
+            
             </nav>
         </header>
     );

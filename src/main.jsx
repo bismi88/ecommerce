@@ -6,6 +6,7 @@ import {RouterProvider , createBrowserRouter} from 'react-router-dom'
 import Footer from './pages/Footer/Footer.jsx'
 import Rings from './Rings/Rings.jsx'
 import Header from './Header.jsx'
+import About from './About.jsx'
 
 const router = createBrowserRouter(
   [
@@ -16,6 +17,10 @@ const router = createBrowserRouter(
     {
       path:'/rings',
       element: <Rings/>
+    },
+    {
+      path: '/About',
+      element: <About />
     }
   ]
 )
