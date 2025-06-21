@@ -10,9 +10,9 @@ export default function Header(){
             <nav className="image flex justify-between pt-5 ">
             <ul className="jewellery flex gap-5 pl-10">
                 <li><a className="" href="/rings">RINGS</a></li>
-                <li>BRACELETS</li>
-                <li>EARINGS</li>
-                <li>NECKLACES</li>
+                <li><a className="" href="/Bracelets">BRACELETS</a></li>
+                <li><a className="" href="/Earings">EARINGS</a></li>
+                <li><a className="" href="/Necklaces">NECKLACES</a></li>
             </ul>
             <ul className="blingg text-3xl">
                 <h1>BLINGG</h1>
@@ -22,7 +22,7 @@ export default function Header(){
             <ul className="home flex gap-5 pr-10">
                 <li><a className="" href="/">HOME</a> </li>
                 <li><a className="" href="/About">ABOUT</a>  </li>
-                <li>CONTACT</li>
+                <li><a className="" href="/Contact">CONTACT</a> </li>
                  <li>
                     <Search />
                     {/* <img src={image} alt=""/> */}
